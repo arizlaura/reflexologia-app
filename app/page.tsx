@@ -4,7 +4,38 @@ export default function Home() {
   const whatsappUrl = `https://wa.me/${siteContent.whatsappNumber}`;
 
   return (
-    <main className="min-h-screen bg-[#f7efe7] text-[#2f2a24]">
+  <main className="min-h-screen bg-[#f7efe7] text-[#2f2a24]">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-[#d8c7b5]/60 bg-[#f7efe7]/80 backdrop-blur">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#" className="text-lg font-semibold tracking-tight">
+          {siteContent.businessName}
+        </a>
+
+        <div className="hidden items-center gap-6 text-sm font-medium text-[#6f6258] md:flex">
+          <a href="#servicios" className="transition hover:text-[#2f2a24]">
+            Servicios
+          </a>
+
+          <a href="#beneficios" className="transition hover:text-[#2f2a24]">
+            Beneficios
+          </a>
+
+          <a href="#contacto" className="transition hover:text-[#2f2a24]">
+            Contacto
+          </a>
+        </div>
+
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-full bg-[#6f8f72] px-5 py-2 text-sm font-medium text-white transition hover:bg-[#5f7d62]"
+        >
+          Reservar
+        </a>
+      </nav>
+    </header>
+
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 py-20 text-center">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-[#8b6f47]">
           {siteContent.location}
@@ -53,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section id="servicios" className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-10 text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-[#8b6f47]">
             Servicios
@@ -84,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section id="beneficios" className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div>
             <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-[#8b6f47]">
@@ -108,7 +139,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 py-20 text-center">
+      <section id="contacto" className="mx-auto max-w-5xl px-6 py-20 text-center">
         <div className="rounded-[2rem] bg-[#6f8f72] p-8 text-white md:p-12">
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.25em] text-white/80">
             Contacto
@@ -130,6 +161,28 @@ export default function Home() {
           </a>
         </div>
       </section>
+      
+      <footer className="mx-auto max-w-6xl px-6 py-10 text-center text-sm text-[#6f6258]">
+        <p className="font-medium text-[#2f2a24]">{siteContent.businessName}</p>
+        <p className="mt-2">{siteContent.location}</p>
+        <a
+          href={siteContent.instagramUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-3 inline-block transition hover:text-[#2f2a24]"
+        >
+          Instagram
+        </a>
+      </footer>
+
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-50 rounded-full bg-[#6f8f72] px-6 py-4 font-medium text-white shadow-lg transition hover:bg-[#5f7d62]"
+      >
+         WhatsApp
+      </a>
     </main>
   );
 }
