@@ -1,17 +1,28 @@
+import Image from "next/image";
 import { siteContent } from "@/data/siteContent";
 
 export default function Home() {
   const whatsappUrl = `https://wa.me/${siteContent.whatsappNumber}`;
 
   return (
-  <main className="min-h-screen bg-[#f7efe7] text-[#2f2a24]">
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-[#d8c7b5]/60 bg-[#f7efe7]/80 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-lg font-semibold tracking-tight">
-          {siteContent.businessName}
+  <main className="min-h-screen bg-[#F8F7F4] text-[#2f2a24]">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-[#d8c7b5]/60 bg-[#F8F7F4]/90 backdrop-blur">
+      <nav className="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#" className="flex items-center gap-3">
+          <Image
+            src="/logo.jpeg"
+            alt="Yoga & Reflexología"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
+
+          <span className="text-sm font-medium uppercase tracking-[0.15em] text-[#6f8f72]">
+            {siteContent.businessName}
+          </span>
         </a>
 
-        <div className="hidden items-center gap-6 text-sm font-medium text-[#6f6258] md:flex">
+        <div className="absolute left-1/2 hidden -translate-x-1/2 md:flex items-center gap-6 text-sm font-medium text-[#6f6258]">
           <a href="#servicios" className="transition hover:text-[#2f2a24]">
             Servicios
           </a>
@@ -37,15 +48,24 @@ export default function Home() {
     </header>
 
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 py-20 text-center">
+        
+        <Image
+          src="/logo.jpeg"
+          alt="Yoga & Reflexología"
+          width={180}
+          height={180}
+          className="mb-8 rounded-full shadow-lg"
+        />
+
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-[#8b6f47]">
           {siteContent.location}
         </p>
 
-        <h1 className="max-w-4xl text-5xl font-semibold tracking-tight md:text-7xl">
+        <h1 className="max-w-3xl text-4xl font-medium tracking-tight md:text-6xl">
           {siteContent.heroTitle}
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-[#6f6258]">
+        <p className="mt-6 max-w-2xl text-xl leading-8 text-[#6f6258]">
           {siteContent.heroSubtitle}
         </p>
 
