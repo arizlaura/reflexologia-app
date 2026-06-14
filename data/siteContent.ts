@@ -1,21 +1,23 @@
 export const siteContent = {
-  businessName: "Alma Reflexología",
-  professionalName: "Nombre de tu amiga",
-  instagramUrl: "https://www.instagram.com/usuario",
-  whatsappNumber: "549294XXXXXXX",
+  businessName: "Yoga & Reflexología",
+  professionalName: "Anne - Yoga & Reflexología",
+  instagramUrl: "https://www.instagram.com/yoga.con.anne",
+  whatsappNumber: "1163540841",
   location: "Bariloche, Argentina",
-  heroTitle: "Reflexología para equilibrar cuerpo y mente",
+
+  heroTitle: "Yoga, reflexología y bienestar integral",
+
   heroSubtitle:
-    "Sesiones personalizadas orientadas a la relajación, el bienestar y el alivio de tensiones.",
+    "Clases particulares de yoga, yogaterapia y sesiones de reflexología para acompañarte en tu bienestar físico y emocional.",
+
   primaryCta: "Reservar turno",
   secondaryCta: "Ver Instagram",
 
   about: {
-    title: "Un espacio para pausar, respirar y reconectar",
-    description:
-      "La reflexología es una técnica manual que trabaja sobre puntos específicos de los pies relacionados con distintas zonas del cuerpo. Cada sesión busca acompañar procesos de relajación, descanso y bienestar integral.",
-  },
-
+  title: "Yoga, reflexología y bienestar integral",
+  description:
+    "Acompaño procesos de bienestar a través de clases particulares de yoga, yogaterapia y sesiones de reflexología a domicilio en Bariloche.",
+},
   services: [
     {
       title: "Reflexología podal",
