@@ -1,6 +1,10 @@
 # Yoga & Reflexología — Bienestar a Domicilio
 
+🌐 **Live:** [reflexologia-app.vercel.app](https://reflexologia-app.vercel.app)
+
 ![CI](https://github.com/arizlaura/reflexologia-app/actions/workflows/ci.yml/badge.svg)
+
+[![Deploy](https://img.shields.io/badge/vercel-deployed-brightgreen?logo=vercel)](https://reflexologia-app.vercel.app)
 
 Landing page for a wellness business based in Bariloche, Argentina, offering yoga classes, yoga therapy, and reflexology sessions.
 
